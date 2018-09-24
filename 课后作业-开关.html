@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<script type="text/javascript" src="jquery-2.1.0.js"></script>
+			<style type="text/css">
+				.bbox{
+					position: relative;
+					width: 70px;
+					height: 35px;
+					background: dodgerblue;
+					border: solid 2px whitesmoke;
+					border-radius:15% ;
+				}
+			.sbox{
+				position: absolute;
+				width: 32px;
+				height: 31px;
+				background: white;
+				top: 1.5px;
+				left: 1px;
+				border-radius:20% ;
+			}
+			
+			</style>
+		<title></title>
+	</head>
+	<body>
+		<div class="bbox">
+			<div class="sbox">
+				
+			</div>
+		</div>
+		<script type="text/javascript">	
+			$(document).ready(function(){
+				
+				$(".bbox").click(function (){					
+				if ($(".sbox").css("left","1px")) {
+					$(".bbox").css("background","darkgray");
+					$(".sbox").css("left","34px");
+				} else{
+					$(".bbox").css("background","dodgerblue");
+					$(".sbox").css("left","1px");
+				}
+				
+				})
+		})
+		</script>
+	</body>
+</html>

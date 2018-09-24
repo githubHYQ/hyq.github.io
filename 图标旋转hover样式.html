@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script type="text/javascript" src="jquery-2.1.0.js"></script>
+		<style type="text/css">
+			img{
+				width: 230px;
+				border-radius: 50%;
+				float: left;
+				position: absolute;
+				z-index: 1;
+			}
+			.bor{
+				float: left;
+				position: relative;
+				width: 230px;
+				height: 230px;
+				border-radius: 50%;
+				border-bottom:solid 10px springgreen ;
+				border-left:solid 10px gold;
+				border-right:solid 10px springgreen ;
+				border-top:solid 10px gold ;
+				transition: all 1s; 
+			}
+			.info-back{
+				width: 230px;
+				height: 230px;
+				position: absolute;
+				border-radius: 50%;
+				float: left;
+				opacity: 0;
+				z-index: 1;
+				text-align: center;
+				color: white;
+				background-color: rgba(0,0,0,0.2);	
+				
+				
+			}
+			
+			.info-back:hover{
+				transform: rotate(-180deg);
+				opacity: 1;
+			}
+			
+			.bor:hover{
+				transform: rotate(180deg);
+			}
+			.bor:hover .img{
+				transform: rotate(0deg);
+			}
+		</style>
+	</head>
+	<body>
+		<div class="icon">
+			<div class="bor">
+				<div class="img"><img src="share/GZ183702/img/avatar.jpg"/>
+			</div>
+			
+           <div class="info-back">
+            	<h2>Heading<br />here<h2>	
+            	<hr style="width: 60%;margin-top: -10px;" />
+            	<p style="font-size: 11px;">Description goes here</p>
+          </div>
+          
+		</div>
+	</body>
+</html>

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script src="jquery-2.1.0.js" type="text/javascript" charset="utf-8"></script>
+		<style type="text/css">
+			.outerbox{
+				position: relative;
+				
+			}
+			img{
+				position: absolute;
+				float: left;
+				width: 230px;
+				z-index: 1;
+				height: 230px;
+				border-radius:50% ;	
+				transition: all 1s;
+			}
+			.imgBox{
+				position: relative;
+				float: left;
+				width: 230px;
+				height: 230px;
+				border-radius:50% ;
+				border: solid 10px thistle;
+
+				
+				
+			}
+			.textBOX{
+				
+				float: left;
+				color: white;
+				width: 230px;
+				height: 230px;
+				background: rgba(0,0,0,0.8);
+				border-radius:50% ;
+				position: relative;
+				text-align: center;
+				opacity: 1;
+				margin-left: -260px;
+				
+			}
+			.img1{
+				transition: all 0.7s;	
+				z-index: 1;
+				transform-origin: center;
+			}
+			h2{
+				margin-top: 50px;
+			}
+			p{
+				margin-top: -10px;
+			}
+			.outertextbox{
+				float: left;
+				position: relative;
+				width: 230px;
+				height: 230px;
+				border-radius:50% ;
+				transition: all 0.7s;	
+				z-index: 1;
+			}
+			.imgBox:hover .outertextbox{	
+					transform: translateX(260px);		
+			}
+			.imgBox:hover img{
+				
+				transform: rotate(90deg);
+			}
+			
+		</style>
+	</head>
+	<body>
+		<div class="outerbox">
+			<div class="imgBox">
+				<div class="img1">
+					<img src="图片/310525.jpg"/>
+					</div>
+					<div class="outertextbox">
+						<div class="textBOX">
+						<h2>Heading<br />here<h2>	
+		            	<hr style="width: 60%;margin-top: -40px;" />
+		            	<p style="font-size: 11px;">Description goes here</p>
+				</div>
+					
+				</div>
+			</div>
+			
+		</div>
+	</body>
+</html>

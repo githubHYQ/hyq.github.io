@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script type="text/javascript" src="jquery-2.1.0.js"></script>
+		<style type="text/css">
+			
+			 .radial-out {
+			 	background: tomato;
+				line-height: 40px;
+				text-align: center;
+				border: solid 1px darkgray;
+			 	width: 120px;
+				height: 40px;
+	            position: relative;
+	            z-index: 1;
+	            overflow: hidden;
+        }
+
+        .radial-out::before {
+            content: '';
+            background: teal;
+            width: 100%;
+            height: 100%;
+            display: block;
+            position: absolute;
+            margin-top: -40px;
+            border-radius: 0%;
+            z-index: -1;
+            transform: scale(0);
+            transition: all 0.3s;
+        }
+
+        .radial-out:hover::before {
+            transform: scale(3);
+        }
+		.box1{
+			position: relative;
+			width: 120px;
+			height: 40px;
+			z-index: 1;
+			text-align: center;
+			border: solid 1px darkslategray;
+			background: darkcyan;
+			line-height: 40px;
+			overflow: hidden;
+		}
+		.box1::before{
+			content: '';
+			background: lightcoral;
+			width: 100%;
+			height: 100%;
+			 display: block;
+			 position: absolute;
+			 margin-left: -10px;
+			 border-radius: 20%;
+			 z-index: -1;
+			 transform: scale(0);
+			 transition: all 0.4s;
+		}
+		.box1:hover::before{
+			transform: scale(3);
+		}
+		</style>
+	</head>
+	<body>
+		<div class="radial-out">
+			左→右
+		</div>
+		<div class="box1">中心发散</div>
+	</body>
+</html>
