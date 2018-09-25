@@ -9,3 +9,5 @@
 <a href="https://githubhyq.github.io/hyq.github.io/立体旋转.html">3D旋转盒子</a><br>
 
 <h1>JAVASCRIPT</h1><br>
+<a href="https://githubhyq.github.io/hyq.github.io/3D样式.html">3D相册</a><br>
+<a href="https://githubhyq.github.io/hyq.github.io/3D样式.html">3D相册</a><br>
