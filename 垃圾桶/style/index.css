@@ -1,0 +1,18 @@
+*{
+	margin:0px;
+	padding:0px;
+}
+body{
+	background:url(../img/window.jpg) no-repeat top left;
+}
+.rubish{
+	position: absolute;
+	right:0px;
+	bottom: 0px;
+	width:256px;
+	height: 256px;
+	background:url(../img/ru.png) no-repeat;
+}
+img{
+	position: absolute;
+}

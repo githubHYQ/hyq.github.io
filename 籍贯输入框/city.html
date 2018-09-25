@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script type="text/javascript" src="citys.js"></script>
+	<script type="text/javascript" src="jquery.js"></script>
+</head>
+<body>
+	<select id="province">
+		<option></option>
+	</select>
+	<select id="city">
+		
+	</select>
+	<select id="area">
+		
+	</select>
+	<script type="text/javascript">
+	/**
+	1.观察 重复执行部分
+	 2.一个个拆分函数
+	 3.拆分的函数 存同去异
+	**/
+	$(function(){
+		//递归函数
+		var provinceStr='';
+		for(var i in citiesall){
+			provinceStr +='<option>'+citiesall[i].name+'</option>';
+		}
+		$('#province').html(provinceStr).change(function(){
+			var provinceName=$(this).val();
+			for(var j in citiesall){
+				//查找省份
+				if(citiesall[j].name== provinceName){
+					//找出city
+					var cities=citiesall[j].city;
+					var cityStr='';
+					for(var n in cities){
+						cityStr+='<option>'+cities[n].name+'</option>';
+					}
+					$('#city').html(cityStr).change(function(){
+						var cityName=$(this).val();
+						for(var m in cities){
+							if(cities[m].name==cityName){
+								var areas=cities[m].area;
+								var areaStr='';
+								for(var x in areas){
+									areaStr+='<option>'+areas[x]+'</option>';
+								}
+								$('#area').html(areaStr);
+							}
+						}
+
+					});	
+				}
+			}
+		});
+
+	});
+	</script>
+</body>
+</html>

@@ -11,3 +11,6 @@
 <h1>JAVASCRIPT</h1><br>
 <a href="https://githubhyq.github.io/hyq.github.io/瀑布流练习/waetrFlow.html">瀑布流</a><br>
 <a href="https://githubhyq.github.io/hyq.github.io/侧边浮动菜单动画效果/TOP.html">侧边浮动菜单</a><br>
+<a href="https://githubhyq.github.io/hyq.github.io/05小球弹跳.html">小球弹跳</a><br>
+<a href="https://githubhyq.github.io/hyq.github.io/籍贯输入框/city.html">侧边浮动菜单</a><br>
+<a href="https://githubhyq.github.io/hyq.github.io/垃圾桶/index.html">垃圾桶</a><br>

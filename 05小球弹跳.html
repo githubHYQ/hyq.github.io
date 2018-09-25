@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        *{
+            margin: 0;}
+        #box{
+            width: 600px;
+            height: 400px;
+            background: #ccc;
+            margin: auto;
+            position: relative;
+        }
+        #circle{
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            background: radial-gradient(circle,#5cabff,#000);
+            position: absolute;
+            left: 0;
+            top: 0;
+        }
+    </style>
+</head>
+
+<body>
+<div id="box">
+    <div id="circle"></div>
+</div>
+<script>
+    var box = document.getElementById('box')
+    var circle = document.getElementById('circle')
+
+//    设置变量
+    var x = 0;
+    var y = 0;
+    var xStep = 1
+    var yStep = 1
+    setInterval(function () {
+//        判断触边 如果触边 就设置增加量为相反值
+        if(y >= 320 || y<0){
+            yStep = -yStep
+        }
+        if(x >= 520 || x<0){
+            xStep = -xStep
+
+        }
+
+        x+=xStep
+        y+=yStep
+
+
+        circle.style.left = x + 'px'
+        circle.style.top = y + 'px'
+    },5)
+
+
+
+
+</script>
+</body>
+</html>

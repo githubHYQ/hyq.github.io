@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>垃圾桶</title>
+	<link rel="stylesheet" href="style/index.css"/>
+	<script type="text/javascript" src="js/jquery.js"></script>
+</head>
+<body>
+
+	<div class="rubish"></div>
+	<script type="text/javascript">
+	$(function(){
+		var  imgArr=['icon1.png','icon2.png','icon3.png','icon4.png','icon5.png','icon6.png','icon7.png'];
+		$(imgArr).each(function(i,t){
+			var img=$('<img />').attr('src','img/'+t).css({
+				left:Math.floor(Math.random()*1500),
+				top:Math.floor(Math.random()*600)
+			});
+			$('body').append(img);
+		});
+		var pos={x:0,y:0}; // {x:0,y:0} 鼠标相对图片的位置
+		var isMousedown=false;//记录鼠标是否按下
+		var imgNow=null;
+		$('img').on('mousedown',function(e){
+			pos.x=e.pageX-$(this).offset().left;
+			pos.y=e.pageY-$(this).offset().top;
+			isMousedown=true;
+			imgNow=this;
+			return false;//阻止事件冒泡
+		});
+		$(document).on('mousemove',function(e){
+			if(!isMousedown) return; //如果鼠标弹起 不移动 直接return;
+			var x=e.pageX-pos.x;
+			var y=e.pageY-pos.y;
+			$(imgNow).css({
+				left:x,
+				top:y
+			});
+		}).on('mouseup',function(){
+			isMousedown=false;//鼠标弹起不继续移动 设置false
+			var rubishPos=$('.rubish').offset();//获取垃圾桶坐标
+			var imgPos=$(imgNow).offset();//获取当前拖动图片坐标
+			if(rubishPos.left+30<=imgPos.left&&rubishPos.top+20<=imgPos.top){
+				$(imgNow).remove();
+			}
+		});
+
+	});
+	</script>
+</body>
+</html>
