@@ -1,0 +1,74 @@
+/* .outerbox{
+    position: relative;
+
+} */
+.headline {
+  margin-top: 60px;
+  display: block;
+  text-align: center;
+  width: 100%;
+}
+.p1 {
+  font-size: 40px;
+  color: #48a770;
+  font-weight: 300;
+}
+.p2 {
+  font-size: 26px;
+  color: gray;
+  opacity: 0.6;
+  font-weight: 300;
+  margin-top: -35px;
+}
+.anniu {
+  float: left;
+  width: 50%;
+  padding: 0 2em;
+  min-height: 300px;
+  position: relative;
+  text-align: right;
+}
+.anniu > button {
+  border: none;
+  padding: 0.6em 1.2em;
+  background: #388a5a;
+  color: #fff;
+  font-family: 'Lato', Calibri, Arial, sans-serif;
+  font-size: 1em;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  cursor: pointer;
+  display: inline-block;
+  margin: 3px 2px;
+  border-radius: 2px;
+}
+.text > p {
+  font-weight: 300;
+  font-size: 2em;
+  padding: 0 0 0.5em;
+  margin: 0;
+  line-height: 1.5;
+  color: #48a770;
+}
+.ulbox {
+  position: absolute;
+  background: #48a770;
+  height: 100%;
+  float: left;
+  margin-top: -305px;
+  opacity: 0.9;
+  color: white;
+}
+.ulbox > ul {
+  margin-left: -37px;
+  list-style: none;
+  text-align: left;
+  width: 300px;
+}
+.ulbox > ul > li {
+  line-height: 51px;
+  border-bottom: solid 1px gray;
+}
+.ulbox > ul > li > a {
+  margin-left: 40px;
+}

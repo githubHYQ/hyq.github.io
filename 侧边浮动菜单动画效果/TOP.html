@@ -1,0 +1,56 @@
+<!DOCTYPE <!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="TOP.css" />
+    <script src="jquery-2.1.0.js"></script>
+</head>
+<body>
+    <div class="outerbox">
+        <div class="headline">
+            <p class="p1">侧边栏转换</p>
+            <p class="p2">off-canvas视图的转换效果</p>
+        </div>
+        <div class="anniu">
+            <button class="btn1">SLIDE IN ON TOP</button>
+            <button>REVEAL</button>
+            <button>PUSH</button><br> 
+            <button>SLIDE ALONG</button>
+            <button>RESERSE SLIDE OUT</button><br>
+            <button>ROTATE PUSHER</button>
+            <button>3D ROTATE IN</button><br>
+            <button>3D ROTATE OUT</button><br>
+            <button>SCALE DOWN PUSHER</button>
+            <button>SCALE UP</button><br>
+            <button>SCALE & ROTATE PUSHER</button><br>
+            <button>OPEN DOOR</button>
+            <button>FALL DOWN</button><br>
+            <button>DELAYED 3D ROTATE</button>     
+        </div>
+        <div class="text">
+                <p>侧边栏菜单或off-canvas</p>
+                <p>这里是一些灵感给他们使用CSS风格转换。</p>   
+        </div>
+        <div class="ulbox">
+            <ul>
+                <li style="color:rgb(27, 22, 22);height:65px;font-size: 36px;font-weight: 300;"><a>Sidebar</a></li>
+                <li><a> DAATA MANAGEMENT</a></li>
+                <li><a>LOCATION</a></li>
+                <li><a>STUDY</a></li>
+                <li><a>COLLECTIONS</a></li>
+                <li><a>CREDITS</a></li>
+            </ul>
+        </div>
+    </div>
+</body>
+        <script>
+                $(document).ready(function () {
+                    $(".btn1").click(function(){
+                        $(".ulbox").slideToggle();
+                    });
+                });
+        </script>
+</html>  

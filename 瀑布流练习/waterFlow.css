@@ -1,0 +1,44 @@
+body{
+	padding: 0px;
+	margin: 0px;
+	background: whitesmoke;
+	font-family:"微软雅黑";
+}
+.container{
+	width: 1200px;
+	margin: 0 auto;
+	margin-top: 40px;
+}
+.container > .items{
+	position: relative;
+}
+.container > .items > .item{
+	width: 232px;
+	position: absolute;
+	box-shadow: 0 1px 3px rgba(0,0,0,0.3);
+}
+.container > .items > .item > img{
+	width: 100%;
+	display: block;
+}
+.container > .items > .item > p{
+	margin: 0px;
+	padding: 10px;
+	background:white;
+}
+.container > .btn {
+	width: 280px;
+	height: 40px;
+	margin:30px auto;
+	line-height: 40px;
+	background-color:#ccc;
+	font-size: 24px;
+	cursor:pointer;
+	text-align: center;
+	cursor: pointer;
+	border-radius: 5px;
+}
+.container >.loading {
+
+	background-color:transparent;
+}

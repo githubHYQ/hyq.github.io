@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		<div id="div" style="line-height: 40px;text-align: center;border:2px solid tan;width: 100px;height: 40px;background: teal;color: white;margin: 0px auto;">
+			
+		</div>
+		<a onclick="f()" href="">看不清楚，换一张</a>
+	</body>
+	<script type="text/javascript">
+		
+		function f () {
+		var code=""
+        var checkCode = document.getElementById("div");
+        var random = new Array(0,1,2,3,4,5,6,7,8,9,'A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R', 'S','T','U','V','W','X','Y','Z','a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z');//随机数
+        for(var i = 0; i < 6; i++) {
+            var index = Math.floor(Math.random()*62);
+            code += random[index];
+        }
+        checkCode.value = code;
+   	 	div.innerHTML=code
+    
+		}		
+		f()
+	</script>
+</html>
