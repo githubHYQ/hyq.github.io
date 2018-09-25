@@ -14,3 +14,5 @@
 <a href="https://githubhyq.github.io/hyq.github.io/05小球弹跳.html">小球弹跳</a><br>
 <a href="https://githubhyq.github.io/hyq.github.io/籍贯输入框/city.html">侧边浮动菜单</a><br>
 <a href="https://githubhyq.github.io/hyq.github.io/垃圾桶/index.html">垃圾桶</a><br>
+<a href="https://githubhyq.github.io/hyq.github.io/打地鼠/mouse.html">打地鼠</a><br>
+<a href="https://githubhyq.github.io/hyq.github.io/plane/index.html">飞机大战</a><br>
