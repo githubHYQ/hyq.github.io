@@ -9,5 +9,5 @@
 <a href="https://githubhyq.github.io/hyq.github.io/立体旋转.html">3D旋转盒子</a><br>
 
 <h1>JAVASCRIPT</h1><br>
-<a href="https://githubhyq.github.io/hyq.github.io/瀑布流练习/waterFlow.html">瀑布流</a><br>
+<a href="https://githubhyq.github.io/hyq.github.io/瀑布流练习/waetrFlow.html">瀑布流</a><br>
 <a href="https://githubhyq.github.io/hyq.github.io/侧边浮动菜单动画效果/TOP.html">侧边浮动菜单</a><br>
