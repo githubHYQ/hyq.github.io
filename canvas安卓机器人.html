@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="{CHARSET}">
+		<title></title>
+	</head>
+	<body>
+		<canvas id="mycanvas" width="400px" height="500px" style="border: 1px gray solid;"></canvas>
+		<script type="text/javascript">
+			var c=document.getElementById("mycanvas");
+			var ctx=c.getContext("2d");
+			ctx.beginPath();
+			ctx.fillStyle="green";
+			ctx.strokeStyle="green";
+			ctx.arc(200,200,80,1*Math.PI,0*Math.PI);
+			ctx.fill();
+			ctx.stroke();
+			
+			ctx.beginPath();
+			ctx.fillStyle="white";			
+			ctx.arc(170,160,10,0,2*Math.PI);
+			ctx.fill();
+			ctx.stroke();
+			
+			ctx.beginPath();
+			ctx.fillStyle="white";
+			ctx.arc(230,160,10,0,2*Math.PI);
+			ctx.fill();
+			ctx.stroke();
+			
+			
+			ctx.beginPath();
+			ctx.fillStyle="green";
+			ctx.strokeStyle="green";
+			ctx.moveTo(120,210);
+			ctx.lineTo(280,210);
+			ctx.lineTo(280,300);
+			ctx.lineTo(120,300);
+			ctx.fill();
+			
+			
+			ctx.beginPath();
+			ctx.fillStyle="green";
+			ctx.moveTo(160,300);
+			ctx.lineTo(240,300);
+			ctx.lineTo(240,340);
+			ctx.lineTo(160,340);
+			ctx.fill();
+			
+			ctx.beginPath();
+			ctx.fillStyle="green";
+			ctx.strokeStyle="green";
+			ctx.arc(161,299,40,0,2*Math.PI);
+			ctx.fill();
+			ctx.stroke();
+			
+			ctx.beginPath();
+			ctx.fillStyle="green";
+			ctx.strokeStyle="green";
+			ctx.arc(239,299,40,0,2*Math.PI);
+			ctx.fill();
+			ctx.stroke();
+			
+			ctx.beginPath();
+			ctx.fillStyle="green";
+			ctx.moveTo(80,220);
+			ctx.lineTo(110,220);
+			ctx.lineTo(110,300);
+			ctx.lineTo(80,300);
+			ctx.fill();
+			
+			ctx.beginPath();
+			ctx.fillStyle="green";
+			ctx.moveTo(290,220);
+			ctx.lineTo(320,220);
+			ctx.lineTo(320,300);
+			ctx.lineTo(290,300);
+			ctx.fill();
+			
+			ctx.beginPath();
+			ctx.fillStyle="green";			
+			ctx.arc(95,220,15,0,2*Math.PI);
+			ctx.fill();
+			
+			ctx.beginPath();
+			ctx.fillStyle="green";			
+			ctx.arc(305,220,15,0,2*Math.PI);
+			ctx.fill();
+			
+			ctx.beginPath();
+			ctx.fillStyle="green";			
+			ctx.arc(305,300,15,0,2*Math.PI);
+			ctx.fill();
+			
+			ctx.beginPath();
+			ctx.fillStyle="green";			
+			ctx.arc(95,300,15,0,2*Math.PI);
+			ctx.fill();
+			
+			ctx.beginPath();
+			ctx.fillStyle="green";
+			ctx.moveTo(160,340);
+			ctx.lineTo(190,340);
+			ctx.lineTo(190,380);
+			ctx.lineTo(160,380);
+			ctx.fill();
+			
+			ctx.beginPath();
+			ctx.fillStyle="green";
+			ctx.moveTo(210,340);
+			ctx.lineTo(240,340);
+			ctx.lineTo(240,380);
+			ctx.lineTo(210,380);
+			ctx.fill();
+			
+			ctx.beginPath();
+			ctx.fillStyle="green";			
+			ctx.arc(225,380,15,0,2*Math.PI);
+			ctx.fill();
+			
+			ctx.beginPath();
+			ctx.fillStyle="green";			
+			ctx.arc(175,380,15,0,2*Math.PI);
+			ctx.fill();
+			
+			ctx.beginPath();
+			ctx.font="40px Arial"
+			ctx.strokeText("Android",135,450);
+			
+		</script>
+	</body>
+</html>

@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			*{
+				margin: 0;
+				padding: 0;
+			}
+			#calendar{
+				width: 700px;
+				margin: 100px auto;
+				/*background-color: palegoldenrod;*/
+			}
+			#year_month{
+				text-align: center;
+			}
+			#content ul{
+				list-style: none;
+			}
+			#content li{
+				width: 100px;
+				float: left;
+				text-align: center;
+				height: 50px;
+				line-height: 50px;
+				/*background-color: yellowgreen;*/
+			}
+			#content li:hover{
+				background-color: tan;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="calendar">
+			<div id="year_month">
+				<select id="year"></select>年
+				<select id="month"></select>月
+			</div>
+			<div id="content">
+				<ul>
+					<li>周日</li>
+					<li>周一</li>
+					<li>周二</li>
+					<li>周三</li>
+					<li>周四</li>
+					<li>周五</li>
+					<li>周六</li>
+				</ul>
+				<ul id="days"></ul>
+			</div>
+		</div>
+	</body>
+	<script type="text/javascript">
+		var yearSelect = document.getElementById("year")
+		var monthSelect = document.getElementById("month")
+		var daysUl = document.getElementById("days")
+		
+		//填充所有的能够选择的【年份】
+		for(var year = 1900;year < 3000;year ++){
+			createOption(year,yearSelect)
+		}
+		//填充所有的能够选择的【月份】
+		for(var month = 1;month <= 12;month ++){
+			createOption(month,monthSelect)
+		}
+		//设置年份和月份是【当前时间】
+		setCurrentYearAndMonth();
+		//开始向days这个ul中填入具体的日期
+		fillDays(+yearSelect.value,monthSelect.value - 1)
+		//监听用户的年份发生改变
+		yearSelect.onchange = function(){
+			fillDays(+yearSelect.value,monthSelect.value - 1)
+		}
+		//监听用户的月份发生改变
+		monthSelect.onchange = function(){
+			fillDays(+yearSelect.value,monthSelect.value - 1)
+		}
+		/**
+		 * 【createOption】方法
+		 * 根据给定的参数创建一个【option】并【把这个option插入到指定的select中】
+		 */
+		function createOption(value,parentSelect){
+			//创建option
+			var opt = document.createElement("option")
+			opt.value = value
+			opt.innerHTML = value
+			//把创建的option节点插入到传入的父容器节点中
+			parentSelect.appendChild(opt)
+		}
+		/**
+		 * 【setCurrentYearAndMonth】设置select默认选择的是当前的年份和月份
+		 */
+		function setCurrentYearAndMonth(){
+			var d = new Date()
+			yearSelect.value = d.getFullYear()
+			monthSelect.value = d.getMonth() + 1
+		}
+		/**
+		 * 【fillDays】向days中填充某年某月相应的日期
+		 */
+		function fillDays(year,month){
+			daysUl.innerHTML = ''
+			//代表指定的某年某月的1日
+			var d = new Date(year,month,1)
+			//计算1日是星期几
+			var dayOfWeek = d.getDay()
+			//向1日之前添加内容是空li
+			for(var i = 0;i < dayOfWeek;i ++){
+				//创建空li
+				createLi('',daysUl)
+			}
+			//计算当前月有多少天：可以先求出下一个月的第1天的对象nextOne  2018-9-1
+			var nextOne = new Date(year,month + 1,1)
+			//继续通过【下一个月的第1天】来推出上个月的最后一天
+			nextOne.setDate(0)
+			var currentDays = nextOne.getDate() //获取到这个月有多少天
+			for(var i = 1;i <= currentDays;i ++){
+				createLi(i,daysUl)
+			}
+			//当前日期的背景高亮
+			var today = new Date().getDate()
+			//获取表示当前日期的li
+			var li = document.getElementById(today + "")
+			li.style.backgroundColor = "tan"
+			li.style.borderRadius = "50%"
+		}
+		/**
+		 * 【createLi】创建具有指定内容的Li，并把它插入到指定的位置
+		 */
+		function createLi(content,ul){
+			var li = document.createElement("li")
+			li.innerHTML = content
+			if((content+"").length > 0){
+				li.id = content
+			}
+			ul.appendChild(li)
+		}
+	</script>
+</html>

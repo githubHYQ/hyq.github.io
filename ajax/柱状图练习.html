@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<script type="text/javascript" src="jquery-2.1.0.js"></script>
+		<title></title>
+		<style type="text/css">
+			*{
+				margin: 0px;
+				padding: 0px;
+			}
+			ul{
+				list-style: none;
+				overflow: hidden;
+			}
+			ul li{
+				width: 40px;
+				height: 100px;
+				background: tomato;
+				float: left;
+				margin-left: 20px;
+				text-align: center;
+				border: 1px solid lightslategray;
+			}
+		</style>
+	</head>
+	<body>
+		<ul>
+			<li>1</li>
+			<li>2</li>
+			<li>3</li>
+			<li>4</li>
+			<li>5</li>
+			<li>6</li>
+			<li>7</li>
+			<li>8</li>
+			
+		</ul>
+		<script type="text/javascript">
+			$(function  () {
+				var length=$('ul li').length
+				console.log(length)
+				$('ul li').each(function  (i,e) {
+					var liHeight=(i+1)*50;
+					$(e).css({
+						height:liHeight,
+						marginTop:(length-i-1)*50
+						
+					})
+				})
+			})
+		</script>
+	</body>
+</html>

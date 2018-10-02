@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		<h1>个性字体</h1>
+		
+		<canvas id="myfont" width="220px" height="80px" 
+			style="text-align: center;line-height: 80px; border: solid 1px gray;margin-top:10px ;overflow: visible;">
+		</canvas><br />
+		<button id="btn" onclick="getVal()">生成字体</button><br /><br />
+		输入姓名：<input name="" id="inputText" /><br /><br />
+		选择字体及颜色：<select id="sel">
+			<option>宋体</option>
+			<option>楷体</option>
+			<option>琥珀体</option>
+			<option>彩云体</option>
+			<option>倩体</option>
+			<option>黑体</option>
+			<option>幼圆</option>
+			<option>方正姚体</option>
+		</select>
+		<select id="col">
+			<option>black</option>
+			<option>teal</option>
+			<option>tan</option>
+			<option>tomato</option>
+			<option>yellow</option>
+			<option>green</option>
+			<option>gray</option>
+			<option>orange</option>
+		</select>
+		
+		
+		
+		<script type="text/javascript">
+			function getVal(){
+				var inptext=document.getElementById("inputText").value;
+				var font=document.getElementById("sel").value;
+				var color=document.getElementById("col").value;
+				
+				console.log(font);
+				console.log(inptext);
+				if(inptext!=null&&inptext!=''){
+					var c=document.getElementById("myfont");
+					var ctx=c.getContext("2d");
+					ctx.strokeStyle=color;
+					ctx.beginPath();
+					ctx.font="40px font";
+					ctx.strokeText(inptext,10,60);
+					ctx.stroke();
+			}
+		}
+		
+		</script>
+	</body>
+</html>

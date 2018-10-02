@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>图片切换</title>
+	<script type="text/javascript" src="../js/jquery.js"></script>
+	<script type="text/javascript">
+	$(function(){
+		$('.list li').click(function(){
+			var src=$(this).find('img').attr('src');
+			$('.preview').find('img').attr('src',src);
+			$(this).addClass('active').siblings().removeClass('active');
+		});
+	});
+	</script>
+	<style>
+	*{
+		margin:0px;
+		padding:0px;
+	}
+	ul{
+		list-style: none;
+	}
+	.preview{
+		float:left;
+	}
+	.preview img{
+		width:300px;
+		height:300px;
+	}
+	.list{
+		float:left;
+		border:1px solid #ddd;
+		margin-top:20px;
+		height:260px;
+	}
+	.list li{
+		margin-top:5px;
+	}
+	.list li img{
+		display: block;
+	}
+	.list li.active img{
+		border:2px solid #F00;
+	}
+	</style>
+</head>
+<body>
+	<div class="preview">
+		<img src="img/icon1.png"/>
+	</div>
+	<ul class="list">
+		<li class="active"><img src="img/icon1.png"/></li>
+		<li><img src="img/icon2.png"/></li>
+		<li><img src="img/icon3.png"/></li>
+	</ul>
+</body>
+</html>

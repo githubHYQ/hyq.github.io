@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="{CHARSET}">
+		<title></title>
+	</head>
+	<body>
+		<canvas id="mycanvas1" width="240" height="180" style="
+			border: solid 1px gainsboro;">
+		</canvas>
+		<canvas id="mycanvas2" width="300" height="210" style="
+			border: solid 1px gainsboro;background: red;">
+		</canvas>
+		<script type="text/javascript">
+			var franch=document.getElementById("mycanvas1");			
+			var ctx=franch.getContext("2d");
+			ctx.fillStyle="blue";
+			ctx.fillRect(0,0,80,180);
+			ctx.fillStyle="white";
+			ctx.fillRect(80,0,80,180);
+			ctx.fillStyle="red";
+			ctx.fillRect(160,0,80,180);
+			
+			var star=document.getElementById("mycanvas2");			
+			var ctxstar=star.getContext("2d");	
+			ctxstar.strokeStyle = 'gold';
+			ctxstar.fillStyle="gold";
+//			ctxstar.beginPath();
+			ctxstar.moveTo(7,38);
+			ctxstar.lineTo(57,38);	
+			ctxstar.lineTo(17,68);
+			ctxstar.lineTo(32,20.5);
+			ctxstar.lineTo(47,68);
+			ctxstar.lineTo(7,38);
+			
+			
+			ctxstar.moveTo(157/2.5,30/2.5);
+			ctxstar.lineTo(207/2.5,30/2.5);	
+			ctxstar.lineTo(167/2.5,60/2.5);
+			ctxstar.lineTo(182/2.5,12.5/2.5);
+			ctxstar.lineTo(197/2.5,60/2.5);
+			ctxstar.lineTo(157/2.5,30/2.5);
+			
+		    ctxstar.moveTo(197/2.5,80/2.5);
+			ctxstar.lineTo(247/2.5,80/2.5);	
+			ctxstar.lineTo(207/2.5,110/2.5);
+			ctxstar.lineTo(222/2.5,62.5/2.5);
+			ctxstar.lineTo(237/2.5,110/2.5);
+			ctxstar.lineTo(197/2.5,80/2.5);
+			
+			ctxstar.moveTo(197/2.5,140/2.5);
+			ctxstar.lineTo(247/2.5,140/2.5);	
+			ctxstar.lineTo(207/2.5,170/2.5);
+			ctxstar.lineTo(222/2.5,122.5/2.5);
+			ctxstar.lineTo(237/2.5,170/2.5);
+			ctxstar.lineTo(197/2.5,140/2.5);
+			
+			ctxstar.moveTo(157/2.5,190/2.5);
+			ctxstar.lineTo(207/2.5,190/2.5);	
+			ctxstar.lineTo(167/2.5,220/2.5);
+			ctxstar.lineTo(182/2.5,172.5/2.5);
+			ctxstar.lineTo(197/2.5,220/2.5);
+			ctxstar.lineTo(157/2.5,190/2.5);
+			ctxstar.fill();
+			ctxstar.stroke();
+			
+		</script>
+	</body>
+</html>

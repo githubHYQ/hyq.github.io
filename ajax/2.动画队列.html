@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<style>
+	*{
+		margin:0px;
+		padding:0px;
+	}
+	ul{
+		list-style: none;
+		overflow: hidden;
+	}
+	ul li{
+		float:left;
+		position: relative;
+		margin-left:20px;
+	}
+	ul li h5{
+		position: absolute;
+		z-index: 2;
+		height:160px;
+		line-height: 40px;
+		width:100%;
+		bottom:-160px;
+		color:#FFF;
+		background-color: rgba(0,0,0,0.5);
+	}
+	</style>
+</head>
+<body>
+	<ul>
+		<li>
+			<img src="img/small.jpg"/>
+			<h5>长裙xxxxxx长裙xxx<br/>xxx长裙xxxxxx长裙<br/>xxxxxx长裙xxxx<br/>xx长裙xxxxxx</h5>
+		</li>
+		<li>
+			<img src="img/small.jpg"/>
+			<h5>长裙xxxxxx</h5>
+		</li>
+		<li>
+			<img src="img/small.jpg"/>
+			<h5>长裙xxxxxx</h5>
+		</li>
+		<li>
+			<img src="img/small.jpg"/>
+			<h5>长裙xxxxxx</h5>
+		</li>
+	</ul>
+	<script>
+	$(function(){
+		$('ul li').mouseenter(function(){
+			$(this).children('h5').stop(true).animate({
+				bottom:30
+			}).animate({bottom:20}).animate({
+				bottom:25
+			}).animate({
+				bottom:0
+			});
+		}).mouseleave(function(){
+			$(this).children('h5').stop(true).animate({
+				bottom:-160
+			});
+		});
+	});
+	</script>
+</body>
+</html>
