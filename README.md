@@ -26,4 +26,4 @@
 
 <h1>AJAX</h1><br>
 <a href="https://githubhyq.github.io/hyq.github.io/ajax/4.手风琴折叠.html">手风琴折叠</a><br>
-<a href="https://githubhyq.github.io/hyq.github.io/ajax/2.动画队列.html">动画队列</a><br><a href="https://githubhyq.github.io/hyq.github.io/ajax/5.图片切换.html">图片切换</a><br><a href="https://githubhyq.github.io/hyq.github.io/ajax/柱状图练习.html">柱状图</a><br>
+<a href="https://githubhyq.github.io/hyq.github.io/ajax/2.动画队列.html">动画队列</a><br><a href="https://githubhyq.github.io/hyq.github.io/ajax/5.图片切换.html">图片切换</a><br><a href="https://githubhyq.github.io/hyq.github.io/ajax/柱状图练习.html">柱状图</a><br>"#" 
