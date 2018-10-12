@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script type="text/javascript" src="jquery-2.1.0.js"></script>
+		<style type="text/css">
+			tr{
+				background: gainsboro;
+				height: 30px;
+			}
+			.tr1{
+				background: lightyellow;
+			}
+			.tr2{
+				background: paleturquoise;
+			}
+			tr:hover{
+				background: orange;
+			}
+			
+			.bgcolor{
+				background: orange;
+			}
+			.odd{
+				background: lightblue;
+			}
+			.dan{
+				background: peachpuff;
+			}
+		</style>
+	</head>
+	<body>
+		<table width="500" border="1" cellspacing="0" align="center" style="color:white;text-align: center;border: 1px cadetblue solid;">
+		 <tr id="head">  
+		  <th id="allq"></th>
+		  <th>姓名</th>
+		  <th>薪水</th>
+		  <th>年龄</th>		
+		 </tr>
+		 <tr class="tr1">
+		 <td><input type="checkbox" id="box1" value="套餐一" /></td>
+		  <td>张三</td>	  
+		  <td>22000</td>
+		  <td>22</td>
+		 </tr>
+		 <tr class="tr2">
+		 <td><input type="checkbox" id="box2" value="套餐一" /></td>
+		  <td>李四</td>
+		  <td>22000</td>		  
+		  <td>23</td>
+		 </tr>
+		  <tr  class="tr1">
+		 <td><input type="checkbox" id="box3" value="套餐一" /></td>
+		  <td>王五</td>
+		  <td>2400</td>		  
+		  <td>35</td>
+		 
+		 </tr>
+		 <tr  class="tr2">
+		  <td><input type="checkbox" id="box4" value="套餐一" /></td>
+		  <td>马六</td>
+		  <td>15000</td>		  
+		  <td>21</td>
+		  
+		 </tr>
+		</table>
+ 		<script type="text/javascript">
+ 			
+ 			$(document).ready(function() {
+ 				
+ 				$('input[type="checkbox"]').click(function () {
+ 					
+            		if ($(this).is(":checked")==true){
+            			$(this).parent().parent().removeClass('#tr1');
+            			$(this).parent().parent().removeClass('#tr2');	
+            			$(this).parent().parent().addClass('bgcolor');
+            		}else{
+            			$(this).parent().parent().removeClass('bgcolor');
+            		}
+            });
+// 				$("#allq").click(function() {
+// 				if ($("#allq").is(":checked")==true){
+//					console.log("已选中");					
+//					$('input[type="checkbox"]').prop('checked','true');		
+//				}		
+// 				});
+//				$("#allq").click(function() {
+//					if ($("#allq").is(":checked")==false){
+//					 
+//					 $('input[type="checkbox"]').each(function () {
+//          		 $(this).prop("checked", !$(this).prop("checked"));
+//          		}); 
+//				}	
+//			});
+// 			
+ 			
+ 			});
+ 		</script>
+	</body>
+</html>

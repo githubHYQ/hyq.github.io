@@ -1,0 +1,76 @@
+<!DOCTYPE <html>
+	<head>
+		<meta charset="UTF-8">
+		<title>放大镜</title>
+		<script type="text/javascript" src="jquery-2.1.0.js"></script>
+	</head>
+	<style type="text/css">
+		.scale{
+			width: 350px;
+			height: 450px;
+			margin: 0 auto;
+			position: relative;			
+		}
+		.scale img{
+			width: 350px;
+			height: 450px;
+		}
+	</style>
+	<body>
+		<div class="scale">
+			<img src="small.jpg" data-big="big.jpg"/>
+		</div>
+		<script type="text/javascript">
+			$.fn.extend({
+				preview:function () {
+					var bigImg='';
+					this.mouseenter(function(){
+						$('<div/>',{id:'smallbox'}).css({
+							width:100,
+							height:100,
+							background:'rgba(75,75,25,0.5)',
+							left:0,
+							top:0,
+							position:'absolute'	
+						}).appendTo(this);
+						bigImg=$(this).find('img').data('big');
+						
+					}).mousemove(function(e) {
+						var boxOffset=$(this).offset();
+						var pos={x:e.pageX-boxOffset.left-50,y:e.pageY-boxOffset.top-50}
+						if (pos.x<0) pos.x=0;
+						if (pos.x>250) pos.x=250;
+						if(pos.y<0) pos.y=0; 
+						if(pos.y>350) pos.y=350; 
+						
+						$(this).find('div#smallbox').css({
+							left:pos.x,
+							top:pos.y
+						});
+					$(this).find('#bigBox').remove();
+					var posLeft=-pos.x/0.7;
+					var posTop=-pos.y/0.7;
+					$('<div/>',{id:'bigBox'}).appendTo(this).css({
+						position:'absolute',
+						left:360,
+						top:0,
+						width:350,
+						height:450,
+						background:'url('+bigImg+')',
+						backgroundRepeat:'no-repeat',
+						backgroundPosition: posLeft+'px '+posTop+'px'
+					});
+					return false;
+					}).mouseleave(function() {
+						
+						$(this).find('#bigBox').remove();
+						$('div#smallbox').remove();
+					});
+				}
+			});
+			$(function(){
+				$('.scale').preview();
+			});
+		</script>
+	</body>
+</html>
