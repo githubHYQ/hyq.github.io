@@ -23,9 +23,9 @@
 <a href="https://githubhyq.github.io/hyq.github.io/字体变换.html">字体转换</a><br>
 
 <h1>JQUERY</h1><br>
-<a href="https://githubhyq.github.io/hyq.github.io/jQueryexam/表格.html">表格</a><br>
-<a href="https://githubhyq.github.io/hyq.github.io/Queryexam/放大镜.html">放大镜</a><br>
-<a href="https://githubhyq.github.io/hyq.github.io/Queryexam/轮播图.html">轮播图</a><br>
+<a href="https://githubhyq.github.io/hyq.github.io/jqexam/表格.html">表格</a><br>
+<a href="https://githubhyq.github.io/hyq.github.io/jqexam/放大镜.html">放大镜</a><br>
+<a href="https://githubhyq.github.io/hyq.github.io/jqexam/轮播图.html">轮播图</a><br>
 
 <h1>AJAX</h1><br>
 <a href="https://githubhyq.github.io/hyq.github.io/ajax/4.手风琴折叠.html">手风琴折叠</a><br>
