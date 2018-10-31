@@ -33,3 +33,5 @@
 
 <h1>项目</h1><br>
 <a href="https://githubhyq.github.io/hyq.github.io/球队社区布局/index.html">球队社区首页</a><br>
+<a href="https://githubhyq.github.io/hyq.github.io/博客">博客</a><br>
+
