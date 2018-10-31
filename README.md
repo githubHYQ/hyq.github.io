@@ -18,7 +18,6 @@
 <a href="https://githubhyq.github.io/hyq.github.io/籍贯输入框/city.html">侧边浮动菜单</a><br>
 <a href="https://githubhyq.github.io/hyq.github.io/垃圾桶/index.html">垃圾桶</a><br>
 <a href="https://githubhyq.github.io/hyq.github.io/打地鼠/mouse.html">打地鼠</a><br>
-<a href="https://githubhyq.github.io/hyq.github.io/plane/index.html">飞机大战</a><br>
 <a href="https://githubhyq.github.io/hyq.github.io/05-万年历效果.html">万年历</a><br>
 <a href="https://githubhyq.github.io/hyq.github.io/字体变换.html">字体转换</a><br>
 
@@ -33,5 +32,6 @@
 
 <h1>项目</h1><br>
 <a href="https://githubhyq.github.io/hyq.github.io/球队社区布局/index.html">球队社区首页</a><br>
+<a href="https://githubhyq.github.io/hyq.github.io/plane/index.html">飞机大战</a><br>
 <a href="https://githubhyq.github.io/hyq.github.io/博客">博客</a><br>
 
