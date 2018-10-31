@@ -1,4 +1,3 @@
-"# hyq.github.io" 
 <h1>CSS</h1><br>
 <br><a href="https://githubhyq.github.io/hyq.github.io/hover背景样式.html">hover背景样式</a><br>
 <a href="https://githubhyq.github.io/hyq.github.io/hover抖动样式.html">hover抖动样式</a><br>
@@ -23,8 +22,12 @@
 <a href="https://githubhyq.github.io/hyq.github.io/05-万年历效果.html">万年历</a><br>
 <a href="https://githubhyq.github.io/hyq.github.io/字体变换.html">字体转换</a><br>
 
+<h1>JQUERY</h1><br>
+<a href="https://githubhyq.github.io/hyq.github.io/jqexam/表格.html">表格</a><br>
+<a href="https://githubhyq.github.io/hyq.github.io/jqexam/放大镜.html">放大镜</a><br>
+<a href="https://githubhyq.github.io/hyq.github.io/jqexam/轮播图.html">轮播图</a><br>
 
 <h1>AJAX</h1><br>
 <a href="https://githubhyq.github.io/hyq.github.io/ajax/4.手风琴折叠.html">手风琴折叠</a><br>
-<a href="https://githubhyq.github.io/hyq.github.io/ajax/2.动画队列.html">动画队列</a><br><a href="https://githubhyq.github.io/hyq.github.io/ajax/5.图片切换.html">图片切换</a><br><a href="https://githubhyq.github.io/hyq.github.io/ajax/柱状图练习.html">柱状图</a><br>"#" 
+<a href="https://githubhyq.github.io/hyq.github.io/ajax/2.动画队列.html">动画队列</a><br><a href="https://githubhyq.github.io/hyq.github.io/ajax/5.图片切换.html">图片切换</a><br><a href="https://githubhyq.github.io/hyq.github.io/ajax/柱状图练习.html">柱状图</a><br>
 
