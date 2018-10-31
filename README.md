@@ -31,3 +31,5 @@
 <a href="https://githubhyq.github.io/hyq.github.io/ajax/4.手风琴折叠.html">手风琴折叠</a><br>
 <a href="https://githubhyq.github.io/hyq.github.io/ajax/2.动画队列.html">动画队列</a><br><a href="https://githubhyq.github.io/hyq.github.io/ajax/5.图片切换.html">图片切换</a><br><a href="https://githubhyq.github.io/hyq.github.io/ajax/柱状图练习.html">柱状图</a><br>
 
+<h1>项目</h1><br>
+<a href="https://githubhyq.github.io/hyq.github.io/球队社区布局/index.html">球队社区首页</a><br>
