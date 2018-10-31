@@ -1,0 +1,68 @@
+/* 小屏幕（平板，大于等于 768px） */
+
+@media (min-width: 768px) {
+    .container {
+        max-width: 750px;
+    }
+}
+
+@media (max-width: 767px) {
+    .nav-setting {
+        position: absolute;
+        top: 0;
+        right: 1.5rem;
+    }
+
+    .post .panel-footer .name {
+        display: inline-block !important;
+        margin-right: 1rem;
+    }
+}
+
+/* nav-setting */
+
+.header {
+    position: relative;
+}
+
+.nav-setting {
+    margin-top: 1.5rem;
+}
+
+/* register */
+
+.form-group textarea {
+    resize: vertical;
+}
+
+/* index */
+
+.post .profile img {
+    width: 48px;
+    height: 48px;
+}
+
+.post .panel-footer .name {
+    display: none;
+}
+
+/* post comment */
+
+.comment img {
+    width: 40px;
+    height: 40px;
+}
+
+.comment .media-heading {
+    margin-bottom: 0;
+}
+
+.comment .media .delete {
+    display: none;
+}
+
+/* 公共阴影 */
+.panel,
+img {
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}

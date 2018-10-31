@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+
+<body>
+<% if (user) { %>
+    <h1>hello <%= user.uesrname %></h1>
+<% } else { %>
+     <form action="" method="post">
+        <input type="text" name="uesrname" value="">
+        <input type="submit" value="提交">
+    </form>
+<% } %>
+
+<% if (info) { %>
+<mark><%= info %> </mark>
+<% } %>
+
+
+<%= content %> 
+    
+
+</body>
+
+</html>

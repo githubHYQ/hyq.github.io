@@ -1,0 +1,25 @@
+<div class="media">
+    <div class="media-left">
+        <a href="/posts?author=<%= comment.author._id %>">
+            <img class="media-object img-circle" src="/uploads/<%= comment.author.avatar %>" alt="...">
+        </a>
+    </div>
+    <div class="media-body">
+        <div class="media-heading clearfix">
+            <div class="pull-left">
+                <small class="name"><a href="/posts?author=<%= comment.author._id %>"><%= comment.author.username %></a></small>
+                <small class="time"><%= comment.createdTime.toLocaleString() %></small>
+            </div>
+            <%# 判断用户是否登陆 %>
+            <% if (user) { %>
+                <%# 判断登陆的用户 是不是这条留言的作者 %>
+                <% if (comment.author._id == user._id) { %>
+                    <small class="pull-right delete"><a href="/comments/<%= comment._id %>/remove">删除</a></small>
+                <% } %>
+            <% } %>
+        </div>
+        <div class="text-justify comment-content">
+            <span><%= comment.content %></span>
+        </div>
+    </div>
+</div>

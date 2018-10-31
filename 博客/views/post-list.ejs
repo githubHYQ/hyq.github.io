@@ -1,0 +1,28 @@
+<%- include('./components/header') %> 
+
+<!-- 页面主体 -->
+
+    <div class="container post">
+
+
+        <!-- 每篇文章一行 -->
+        <% if (posts.length) { %>
+            <% posts.forEach(element => { %>
+                <%- include('./components/post-content', {post: element}) %> 
+            <% }) %>
+        <% } else { %>
+        <div class="row">
+            <!-- 左边头像区域 -->
+            <div class="col-sm-2 hidden-xs profile"></div>
+            <!-- 右边文章区域 -->
+            <div class="col-xs-12 col-sm-8">
+                <div class="panel panel-default">
+                    <div class="panel-body text-center">空空如也</div>
+                </div>
+            </div>
+        </div>
+        <% } %>
+
+    </div>
+
+<%- include('./components/footer') %> 

@@ -1,0 +1,45 @@
+<%- include('./components/header') %> 
+
+
+    <!-- 页面主体 -->
+
+    <div class="container post">
+
+        <!-- 每篇文章一行 -->
+        <%- include('./components/post-content') %> 
+
+        <!-- 留言区域 -->
+        <div class="row comment">
+            <!-- 留言区域 -->
+            <div class="col-xs-12 col-sm-8 col-sm-offset-2">
+                <div class="panel panel-default">
+                    <div class="panel-heading">留言</div>
+                    <div class="panel-body">
+
+                        <!-- 每一条评论是一个媒体对象 -->
+                        <% comments.forEach(element => { %>
+                            <%- include('./components/comment', {comment: element}) %>
+                        <% }) %>
+                         
+
+                    </div>
+                    <!-- 面板底部 -->
+                    <div class="panel-footer clearfix">
+                        <!-- Basic panel example -->
+                        <form action="/comments/<%= post._id %> " method="POST">
+                            <div class="form-group">
+                                <textarea type="text" rows="3" class="form-control" id="content" name="content"
+                                    placeholder="comment" required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-info form-control">发表留言</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+    </div>
+
+<%- include('./components/footer') %> 
